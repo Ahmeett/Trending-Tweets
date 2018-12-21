@@ -25,8 +25,7 @@ public class App {
         } else if (entityName.toLowerCase().equals("hashtag") || entityName.toLowerCase().equals("hashtags")){
             regexPattern = "(#\\w+)";
         } else if (entityName.toLowerCase().equals("emoji") || entityName.toLowerCase().equals("emoticon")) {
-            regexPattern = "([:;][)(]+)|([:;][SsPpDdOo3|/\\\\$*@])(?![\\w/])|([:;][\\-^])([Ss()PpDdOo3|/\\\\$*@])"+
-                    "|([()$*][:;])|([()$*][-^])([:;])|(<[\\\\/3])(3|)|([Oo][_])([Oo])";
+            regexPattern = "([:;=Xx8B][)(\\[\\]]+)|([\\[\\]()]+[:;=Xx])|([8:;=Xx][SsPpDdOo3>0|/\\\\$*@])(?![\\w/])|([:;>][\\-^\\':;])([Ss()PpDdOo3|/\\\\$*@])|([()$*][:;])|([()$*][-^])([:;])|(<[\\\\/3:;])(3|)|([0Oo.XxUu<>][_-]+)([0Oo.XxUu<>])|([_][-]+)([_])|([-][_]+)([-])";
         }
         Pattern p = Pattern.compile(regexPattern);
         Matcher m;
